@@ -2,8 +2,8 @@
 
 Bulk regex edits across a tree of files, done the careful way. Standard library only, Python 3.9+.
 
-It is the tool form of a real job: adding `aria-label` to about 2,600 PHP pages on a live site
-(about 6,000 share links). It does the boring safety work that a one-off `sed -i` skips.
+It is the tool form of a real job: adding `aria-label` to about 2,600 PHP pages on a live site.
+It does the boring safety work that a one-off `sed -i` skips.
 
 ```
 python -m safeedit edit /var/www/site --glob '*.php' \
