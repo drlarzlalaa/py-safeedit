@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safeedit"
+version = "0.1.0"
+description = "Bulk regex edits across a tree with a dry run, a backup, an additive proof, a per-file lint and a restore command"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "drlarzlalaa" }]
+keywords = ["bulk edit", "refactor", "regex", "backup", "sed"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Build Tools",
+]
+dependencies = []
+
+[project.scripts]
+safeedit = "safeedit.__main__:main"
+
+[tool.setuptools]
+packages = ["safeedit"]
